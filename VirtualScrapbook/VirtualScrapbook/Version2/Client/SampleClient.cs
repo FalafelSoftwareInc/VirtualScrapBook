@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using VirtualScrapbook.Version1.Model;
+using VirtualScrapbook.Version2.Model;
 
 namespace VirtualScrapbook.Version2.Client
 {
