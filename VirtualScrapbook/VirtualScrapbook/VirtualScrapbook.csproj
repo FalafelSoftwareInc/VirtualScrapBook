@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Version2\Client\SampleClient.cs" />
+    <Compile Include="Version2\Model\Book.cs" />
     <Compile Include="Version1\Client\SampleClient.cs" />
     <Compile Include="Version1\Model\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

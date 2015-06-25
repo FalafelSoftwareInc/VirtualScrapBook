@@ -2,7 +2,7 @@
 using System.Text;
 using VirtualScrapbook.Version1.Model;
 
-namespace VirtualScrapbook.Version1.Client
+namespace VirtualScrapbook.Version2.Client
 {
     public class SampleClient
     {
@@ -13,12 +13,9 @@ namespace VirtualScrapbook.Version1.Client
                 throw new ArgumentNullException("Book cannot be null.");
             }
             sb.AppendLine(book.Title);
-            if(book.Images != null)
+            foreach (var image in book.Images)
             {
-                foreach(var image in book.Images)
-                {
-                    sb.AppendLine(image.ImagePath);
-                }
+                sb.AppendLine(image.ImagePath);
             }
         }
     }
