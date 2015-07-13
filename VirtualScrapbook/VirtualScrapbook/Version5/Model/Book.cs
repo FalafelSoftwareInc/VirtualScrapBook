@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -58,5 +59,15 @@ namespace VirtualScrapbook.Version5.Model
         public static Image Default = new Image() { ImagePath = "defaultimage" };
         public string ImagePath { get; set; }
         public bool IsCoverImage { get; set; }
+    }
+
+    [TestFixture]
+    public class SomeTest
+    {
+        [Test]
+        public void ATest()
+        {
+
+        }
     }
 }
